@@ -1,6 +1,6 @@
 #include "CPPM7_HW_2_1.h"
 #include <iostream>
-enum class months {
+enum class Months {
 	Январь = 1,
 	Февраль,
 	Март,
@@ -16,55 +16,55 @@ enum class months {
 };
 
 void CPPM7_HW_2_1() {
-	months month;
-	int number_month;
+	Months month;
+	int numberMonth;
 	do {
 		std::cout << "Введите номер месяца: ";
-		std::cin >> number_month;
-		if (1 <= number_month && number_month <= 12) {
-			month = static_cast<months>(number_month);
-			if (month == months::Январь) {
+		std::cin >> numberMonth;
+		if (1 <= numberMonth && numberMonth <= 12) {
+			month = static_cast<Months>(numberMonth);
+			if (month == Months::Январь) {
 				std::cout << "Январь\n";
 			}
-			else if (month == months::Февраль) {
+			else if (month == Months::Февраль) {
 				std::cout << "Февраль\n";
 			}
-			else if (month == months::Март) {
+			else if (month == Months::Март) {
 				std::cout << "Март\n";
 			}
-			else if (month == months::Апрель) {
+			else if (month == Months::Апрель) {
 				std::cout << "Апрель\n";
 			}
-			else if (month == months::Май) {
+			else if (month == Months::Май) {
 				std::cout << "Май\n";
 			}
-			else if (month == months::Июнь) {
+			else if (month == Months::Июнь) {
 				std::cout << "Июнь\n";
 			}
-			else if (month == months::Июль) {
+			else if (month == Months::Июль) {
 				std::cout << "Июль\n";
 			}
-			else if (month == months::Август) {
+			else if (month == Months::Август) {
 				std::cout << "Август\n";
 			}
-			else if (month == months::Сентябрь) {
+			else if (month == Months::Сентябрь) {
 				std::cout << "Сентябрь\n";
 			}
-			else if (month == months::Октябрь) {
+			else if (month == Months::Октябрь) {
 				std::cout << "Октябрь\n";
 			}
-			else if (month == months::Ноябрь) {
+			else if (month == Months::Ноябрь) {
 				std::cout << "Ноябрь\n";
 			}
 			else {
 				std::cout << "Декабрь\n";
 			}
 		}
-		else if (number_month != 0) {
+		else if (numberMonth != 0) {
 			std::cout << "Неправильный номер!\n";
 		}
 		else {
 			std::cout << "До свидания\n";
 		}
-	} while (number_month != 0);
+	} while (numberMonth != 0);
 }
